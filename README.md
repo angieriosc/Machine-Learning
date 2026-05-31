@@ -47,10 +47,10 @@ La variable `salary_lpa` representa el salario anual del estudiante en LPA.
 | `cgpa`                | Numérica                   | Promedio académico del estudiante. Se utilizó como variable predictora.                                                                            |
 | `branch`              | Categórica                 | Rama o especialidad de ingeniería del estudiante. Fue eliminada debido a su baja relación con el salario.                                          |
 | `college_tier`        | Numérica / Ordinal         | Nivel o categoría de la universidad del estudiante. Puede influir en oportunidades laborales.                                                      |
-| `python_skill`        | Numérica                   | Nivel de habilidad en Python. Representa competencias técnicas.                                                                                    |
-| `dsa_skill`           | Numérica                   | Nivel de habilidad en estructuras de datos y algoritmos.                                                                                           |
-| `ml_skill`            | Numérica                   | Nivel de habilidad en Machine Learning.                                                                                                            |
-| `web_dev_skill`       | Numérica                   | Nivel de habilidad en desarrollo web.                                                                                                              |
+| `python_skill`        | Binaria                   | Nivel de habilidad en Python. Representa competencias técnicas.                                                                                    |
+| `dsa_skill`           | Binaria                   | Nivel de habilidad en estructuras de datos y algoritmos.                                                                                           |
+| `ml_skill`            | Binaria                   | Nivel de habilidad en Machine Learning.                                                                                                            |
+| `web_dev_skill`       | Binaria                   | Nivel de habilidad en desarrollo web.                                                                                                              |
 | `coding_score`        | Numérica                   | Puntaje general de programación del estudiante. Fue normalizada.                                                                                   |
 | `communication_score` | Numérica                   | Puntaje de habilidades de comunicación. Fue normalizada.                                                                                           |
 | `aptitude_score`      | Numérica                   | Puntaje de aptitud lógica o razonamiento. Fue normalizada.                                                                                         |
@@ -59,7 +59,7 @@ La variable `salary_lpa` representa el salario anual del estudiante en LPA.
 | `backlogs`            | Numérica                   | Número de materias reprobadas o pendientes. Fue normalizada.                                                                                       |
 | `resume_score`        | Numérica                   | Puntaje del currículum del estudiante. Fue normalizada.                                                                                            |
 | `skill_score`         | Numérica                   | Puntaje global de habilidades.                                                                                                                     |
-| `placed`              | Numérica / Binaria         | Indica si el estudiante fue colocado laboralmente. Fue eliminada porque después de limpiar los datos todos los registros restantes tenían valor 1. |
+| `placed`              |  Binaria         | Indica si el estudiante fue colocado laboralmente. Fue eliminada porque después de limpiar los datos todos los registros restantes tenían valor 1. |
 | `company_type`        | Categórica                 | Tipo de compañía donde fue colocado el estudiante. Se conservó y se transformó mediante One Hot Encoding.                                          |
 | `job_role`            | Categórica                 | Rol laboral del estudiante. Fue eliminada debido a su baja relación con el salario.                                                                |
 | `salary_lpa`          | Numérica                   | Variable objetivo. Representa el salario anual en LPA.                                                                                             |
