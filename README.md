@@ -1,7 +1,3 @@
-Va, aquí te dejo una versión **más completa que la corta**, pero sin llegar al nivel de artículo. Está pensada para README de GitHub.
-
-Los resultados finales los dejé alineados con tu artículo: red neuronal ajustada con MAE aproximado de 5.57 LPA y Random Forest con MAE de 5.35 LPA y R² cercano a 0.85. 
-
 # Machine Learning - Predicción de Salario
 
 Proyecto de Machine Learning para predecir el salario anual de estudiantes recién egresados utilizando el dataset **Student Placement & Salary**. El salario se encuentra expresado en **LPA** (*Lakhs Per Annum*), donde 1 LPA equivale aproximadamente a $18,100 pesos anuales.
