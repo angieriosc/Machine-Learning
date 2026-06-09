@@ -48,28 +48,28 @@ La variable `salary_lpa` representa el salario anual del estudiante en LPA.
 
 ## Variables del dataset
 
-| Variable              | Tipo                       | Descripción                                                                                    |
-| --------------------- | -------------------------- | ---------------------------------------------------------------------------------------------- |
-| `student_id`          | Categórica / Identificador | Identificador único de cada estudiante. Fue eliminada porque no aporta información predictiva. |
-| `cgpa`                | Numérica                   | Promedio académico del estudiante.                                                             |
-| `branch`              | Categórica                 | Rama o especialidad de ingeniería. Fue eliminada por su baja relación con el salario.          |
-| `college_tier`        | Numérica / Ordinal         | Nivel o categoría de la universidad del estudiante.                                            |
-| `python_skill`        | Numérica                   | Nivel de habilidad en Python.                                                                  |
-| `dsa_skill`           | Numérica                   | Nivel de habilidad en estructuras de datos y algoritmos.                                       |
-| `ml_skill`            | Numérica                   | Nivel de habilidad en Machine Learning.                                                        |
-| `web_dev_skill`       | Numérica                   | Nivel de habilidad en desarrollo web.                                                          |
-| `coding_score`        | Numérica                   | Puntaje general de programación.                                                               |
-| `communication_score` | Numérica                   | Puntaje de habilidades de comunicación.                                                        |
-| `aptitude_score`      | Numérica                   | Puntaje de aptitud lógica o razonamiento.                                                      |
-| `internships`         | Numérica                   | Número de prácticas profesionales realizadas.                                                  |
-| `projects`            | Numérica                   | Número de proyectos realizados.                                                                |
-| `backlogs`            | Numérica                   | Número de materias reprobadas o pendientes.                                                    |
-| `resume_score`        | Numérica                   | Puntaje del currículum del estudiante.                                                         |
-| `skill_score`         | Numérica                   | Puntaje global de habilidades.                                                                 |
-| `placed`              | Numérica / Binaria         | Indica si el estudiante fue colocado laboralmente. Fue eliminada después de la limpieza.       |
-| `company_type`        | Categórica                 | Tipo de compañía. Se conservó y se transformó mediante One Hot Encoding.                       |
-| `job_role`            | Categórica                 | Rol laboral. Fue eliminada por su baja relación con el salario.                                |
-| `salary_lpa`          | Numérica                   | Variable objetivo del modelo.                                                                  |
+| Variable              | Tipo                       | Descripción                                                                                                                                        |
+| --------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `student_id`          | Categórica / Identificador | Identificador único de cada estudiante.                      |
+| `cgpa`                | Numérica                   | Promedio académico del estudiante.                                                                             |
+| `branch`              | Categórica                 | Rama o especialidad de ingeniería del estudiante.       |
+| `college_tier`        | Numérica / Ordinal         | Nivel o categoría de la universidad del estudiante. Puede influir en oportunidades laborales.                                                      |
+| `python_skill`        | Binaria                   | Cuenta con habilidad en Python.                                                                                   |
+| `dsa_skill`           | Binaria                   | Cuenta con habilidad en estructuras de datos y algoritmos.                                                                                           |
+| `ml_skill`            | Binaria                   | Cuenta con habilidad en Machine Learning.                                                                                                            |
+| `web_dev_skill`       | Binaria                   | Cuenta con habilidad en desarrollo web.                                                                                                              |
+| `coding_score`        | Numérica                   | Puntaje general de programación del estudiante.                                                                                   |
+| `communication_score` | Numérica                   | Puntaje de habilidades de comunicación.                                                                                       |
+| `aptitude_score`      | Numérica                   | Puntaje de aptitud lógica o razonamiento.                                                                                        |
+| `internships`         | Numérica                   | Número de prácticas profesionales realizadas por el estudiante.                                                                                    |
+| `projects`            | Numérica                   | Número de proyectos realizados.                                                                                                  |
+| `backlogs`            | Numérica                   | Número de materias reprobadas o pendientes.                                                                                   |
+| `resume_score`        | Numérica                   | Puntaje del currículum del estudiante.                                                                                            |
+| `skill_score`         | Numérica                   | Puntaje global de habilidades.                                                                                                                      |
+| `placed`              |  Binaria         | Indica si el estudiante fue colocado laboralmente.  |
+| `company_type`        | Categórica                 | Tipo de compañía donde fue colocado el estudiante. Se conservó y se transformó mediante One Hot Encoding.                                          |
+| `job_role`            | Categórica                 | Rol laboral del estudiante.                                                                 |
+| `salary_lpa`          | Numérica                   | Variable objetivo. Representa el salario anual en LPA.                                                                                             |
 
 ---
 
@@ -109,6 +109,7 @@ Variables normalizadas:
 * `projects`
 * `resume_score`
 * `backlogs`
+* `skill_score`
 
 ---
 
